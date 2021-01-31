@@ -1,0 +1,289 @@
+
+body{
+	margin: 0;
+	font-family: "Popins",sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+
+}
+
+
+
+.menu{
+	font-weight: bold;
+	color: white;
+	background-color: black;
+	border-radius: 15px;
+	padding: 10px 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+
+}
+
+.menu a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 8px 16px;
+	box-sizing: border-box;
+
+}
+
+.menu a:hover{
+	color: grey;
+	background-color: black;
+
+}
+
+h1{
+	font-size: 64px;
+	font-weight: 400;
+
+}
+
+.main{
+	margin-left: 360px;
+	margin-right: 40px;
+	margin-top: 80px;
+
+}
+
+
+
+h2 {
+    color: black;
+    font-size: 48px;
+    font-weight: 400;
+    margin: 10px 0;
+} 
+
+hr {
+    width:100%;
+    border: 5px solid black;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+
+.member{
+	padding: 8px 8px;
+	width: 30%;
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+
+.member img{
+	filter: grayscale(30%);
+	border-radius: 10px;
+	width: 100%;
+	
+}
+
+.member .description{
+	background-color: #f1f1f1;
+	border-radius: 5px;
+	padding: 2px 16px 5px;
+
+}
+
+.member .position{
+	color: gray;
+}
+
+
+.tariff {
+	width: 30%;
+	padding: 0 8px;
+	min-width: 150px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	box-sizing: border-box;
+	vertical-align: top;
+	max-height: 815px;
+}
+
+.tariff ul {
+	background-color: white;
+	color: black;
+	padding: 0;
+	margin: 0;
+	background-color: #f1f1f1;
+	border-radius:10px;
+}
+
+.tariff li {
+	list-style-type: none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #dddddd;
+	border-radius:10px;
+	padding: 16px 0;
+}
+
+
+.tariff .tariff-name {
+	color: white;
+	background-color: black;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	font-size: 16px;
+	padding: 32px 0;
+	background-color: black;
+	max-height: 300px;
+}
+
+
+.tariff .price {
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.tariff .period {
+	opacity: 0.7;
+}
+
+.tariff button {
+	color: black;
+	background-color: white;
+	border-radius:20px;
+	padding: 15px 20px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 16px;
+}
+
+.tariff button:hover {
+	color: white;
+	background-color: black;
+}
+
+.pro .tariff-name {
+	background-color: #f44336;
+}
+
+.pro button {
+	background-color: #f44336;
+	color: white;
+}
+
+.mega .tariff-name {
+	background-color: grey;
+}
+
+.mega button {
+	background-color: grey;
+	color: white;
+}
+
+.product{
+	font-size: 25px;
+}
+
+.help{
+	color: black;
+    font-size: 20px;
+    font-weight: 200;
+    margin: 10px 0;
+}
+
+#footer{
+	padding: 32px 58px 32px;
+	background-color: #f1f1f1;
+	text-align: right;
+}
+
+#footer a{
+	color: black; 
+}
+
+.tariff a{
+	color: black;
+}
+
+.tariff a:hover{
+	color: white;
+	background-color: black;
+}
+
+@media (max-width: 1024px) {
+	.member{
+		width: 90%;
+	}
+	.tariff{
+		width: 90%;
+		margin-bottom: 25px;
+	}
+	.tariff .tariff-name{
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 768px) {
+	.menu{
+		height: auto;
+		width: 100%;
+		display: flex;
+		padding:0;
+		height: 70px;
+		justify-content: space-between;
+		align-items: center;
+		z-index: 100;
+	}
+	.menu div{
+		display: flex;
+
+	}
+	.menu .name{
+		margin: 0;
+
+	}
+	.menu a{
+		padding: 0 20px;
+		
+	}
+
+	.main{
+	margin: 0;
+	margin-top: 180px;
+	}
+}
+
+@media (max-width: 615px) {
+	.menu{
+		display: block;
+		position: static;
+		height: auto;
+		text-align: center;
+	}
+	.menu div{
+		display: block;
+		text-align: center;
+	}
+	.menu .name{
+		font-size: 30px;
+	}
+	.designers{
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 411px) {
+	h2{
+		margin-left: 10px;
+	}
+	h3{
+		margin-left: 10px;
+	}
+	p{
+		margin-left: 10px;
+	}
+	.help p{
+		margin-left: 15px;
+	}
+}
